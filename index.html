@@ -112,8 +112,8 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>Google Research</span>
+            <span class="author-block"><sup>1</sup>Center for Research in Computer Vision (CRCV), University of Central Florida</span>
+            <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
           </div>
 
           <div class="column has-text-centered">
@@ -258,31 +258,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Recognizing and comprehending human actions and gestures is a crucial perception requirement for robots to interact with humans and carry out tasks in diverse domains, including service robotics, healthcare, and manufacturing. Event cameras, with their ability to capture fast-moving objects at a high temporal resolution, offer new opportunities compared to standard action recognition in RGB videos. However, previous research on event camera action recognition has primarily focused on sensor-specific network architectures and image encoding, which may not be suitable for new sensors and limit the use of recent advancement in transformer-based architectures. In this study, we employ using a computationally efficient model, namely the video transformer network (VTN), which initially acquires spatial embeddings per event- frame and then utilizes a temporal self-attention mechanism. This approach separates the spatial and temporal operations, resulting in VTN being more computationally efficient than other video transformers that process spatio-temporal volumes directly. In order to better adopt the VTN for the sparse and finegrained nature of event data, we design Event-Contrastive Loss (LEC) and event specific augmentations. Proposed LEC promotes learning fine-grained spatial cues in the spatial backbone of VTN by contrasting temporally misaligned frames. We evaluate our method on real-world action recognition of N-EPIC Kitchens dataset, and achieve state-of-the-art results on both protocols - testing in seen kitchen (74.9% accuracy) and testing in unseen kitchens (42.43% and 46.66% Accuracy). Our approach also takes less computation time compared to competitive prior approaches. We also evaluate our method on the standard DVS Gesture recognition dataset, achieving a competitive accuracy of 97.9% compared to prior work that uses dedicated architectures and image-encoding for the DVS dataset. These results demonstrate the potential of our framework EventTransAct for real-world applications of event-camera based action recognition
+          
           </p>
         </div>
       </div>
